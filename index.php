@@ -360,6 +360,7 @@
 	echo "<Form name ='form1' Method ='Post' ACTION ='result.php'>";
 	for ($j = 0; $j<70; ++$j){
 		echo $q[$j]["question"];
+		echo $j;
 		echo "<br />";
 		echo "<Input type = 'Radio' Name ='test".$j."' value= 'A'>".$q[$j]["A"];
 		echo "<Input type = 'Radio' Name ='test".$j."' value= 'B'>".$q[$j]["B"];		
