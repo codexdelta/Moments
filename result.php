@@ -1,5 +1,5 @@
 <?php
-	$E=0;
+	$E==0;
 	$I=0;
 	$S=0;
 	$N=0;
@@ -64,55 +64,74 @@
 <body>
 <p>just to test the site</p>
 <?php
+	// echo $E;
+	// echo "<br />";
+	// echo $I;	
+	// echo "<br />";
+	// echo $N;
+	// echo "<br />";
+	// echo $S;
+	// echo "<br />";
+	// echo $F;
+	// echo "<br />";
+	// echo $T;
+	// echo "<br />";
+	// echo $J;
+	// echo "<br />";
+	// echo $P;
+	// echo "<br />";
+
+	if ($E>=$I && $N>=$S && $F>=$T && $J>=$P) {
+		header('Location: http://localhost/Moments/new/enfj.html');
+	}
+	elseif ($E>=$I && $N>=$S && $T>$F && $J>=$P) {
+		header('Location: http://localhost/Moments/new/entj.html');
+	}
+	elseif ($E>=$I && $N>=$S && $F>=$T && $P>$J) {
+		header('Location: http://localhost/Moments/new/enfp.html');
+	}
+	elseif ($E>=$I && $N>=$S && $T>$F && $P>$J) {
+		header('Location: http://localhost/Moments/new/entp.html');
+	}
+	elseif ($E>=$I && $S>$N && $F>=$T && $J>=$P) {
+		header('Location: http://localhost/Moments/new/esfj.html');
+
+	}
+	elseif ($E>=$I && $S>$N && $F>=$T && $P>$J) {
+		header('Location: http://localhost/Moments/new/esfp.html');
+
+	}
+	elseif ($E>=$I && $S>$N && $T>$F && $J>=$P) {
+		header('Location: http://localhost/Moments/new/estj.html');
+	}
+	elseif ($E>=$I && $S>$N && $T>$F && $P>$J) {
+		header('Location: http://localhost/Moments/new/estp.html');
+	}
+	elseif ($I>$E && $N>=$S && $F>=$T && $J>=$P) {
+		header('Location: http://localhost/Moments/new/infj.html');
+	}
+	elseif ($I>$E && $N>=$S && $F>=$T && $P>$J) {
+		header('Location: http://localhost/Moments/new/infp.html');
+	}
+	elseif ($I>$E && $N>=$S && $T>$F && $J>=$P) {
+		header('Location: http://localhost/Moments/new/intj.html');
+	}
+	elseif ($I>$E && $N>=$S && $T>$F && $P>$J) {
+		header('Location: http://localhost/Moments/new/intp.html');
+	}
+	elseif ($I>$E && $N>=$S && $F>=$T && $J>=$P) {
+		header('Location: http://localhost/Moments/new/infj.html');
+	}
+	elseif ($I>$E && $N>=$S && $F>=$T && $P>$J) {
+		header('Location: http://localhost/Moments/new/infp.html');
+	}
+	elseif ($I>$E && $N>=$S && $T>$F && $J>=$P) {
+		header('Location: http://localhost/Moments/new/intj.html');
+	}
+	elseif ($I>$E && $N>=$S && $T>$F && $P>$J) {
+		header('Location: http://localhost/Moments/new/intp.html');
+	}
 	
-	if ($E>$I && $N>$S && $F>$T && $J>$P) {
-		
-	}
-	elseif ($E>$I && $N>$S && $T>$F && $J>$P) {
-		# code...2
-	}
-	elseif ($E>$I && $N>$S && $F>$T && $P>$J) {
-		# code...3
-	}
-	elseif ($E>$I && $N>$S && $T>$F && $P>$J) {
-		# code...4
-	}
-	elseif ($E>$I && $S>$N && $F>$T && $J>$P) {
-		# code...5
-	}
-	elseif ($E>$I && $S>$N && $F>$T && $P>$J) {
-		# code...6
-	}
-	elseif ($E>$I && $S>$N && $T>$F && $J>$P) {
-		# code...
-	}
-	elseif ($E>$I && $S>$N && $T>$F && $P>$J) {
-		# code...
-	}
-	elseif ($I>$E && $N>$S && $F>$T && $J>$P) {
-		# code...
-	}
-	elseif ($I>$E && $N>$S && $F>$T && $P>$J) {
-		# code...
-	}
-	elseif ($I>$E && $N>$S && $T>$F && $J>$P) {
-		# code...
-	}
-	elseif ($I>$E && $N>$S && $T>$F && $P>$J) {
-		# code...
-	}
-	elseif ($I>$E && $N>$S && $F>$T && $J>$P) {
-		# code...
-	}
-	elseif ($I>$E && $N>$S && $F>$T && $P>$J) {
-		# code...
-	}
-	elseif ($I>$E && $N>$S && $T>$F && $J>$P) {
-		# code...
-	}
-	elseif ($I>$E && $N>$S && $T>$F && $P>$J) {
-		# code...
-	}
 
 ?>
 </body>
