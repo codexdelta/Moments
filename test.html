@@ -1,74 +1,48 @@
-<!DOCTYPE html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" >
 
-<head>
-  <meta charset="utf-8">
-  <!-- If you delete this meta tag World War Z will become a reality -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foundation 5</title>
+<html>
+  <head>
+    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+  </head>
+   <script type="text/javascript">
+   $(document).ready(function(){
+    $('.rightq').hide();
+    $('.leftq').click(function(){
+      id = $(this).data('ans');
+      $('.rightq').hide();
+      $('#'+id).show();
+    });
+  });
+   </script>
+  <body>
+    <div id="left">
+      <div class="leftq" data-ans="ans1">ques 1</div>
+      <div class="leftq" data-ans="ans2">ques 2</div>
 
-  <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
-  <link rel="stylesheet" href="foundation/css/normalize.css">
-  <link rel="stylesheet" href="foundation/css/foundation.css">
-  
-  <script src="foundation/js/vendor/modernizr.js"></script>
+      <div class="leftq" data-ans="ans3">ques 3</div>
+      <div class="leftq" data-ans="ans4">ques 4</div>
 
-</head>
-<body>
-<div class="off-canvas-wrap" data-offcanvas>
-  <div class="inner-wrap">
-    <nav class="tab-bar">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-      </section>
+      <div class="leftq" data-ans="ans5">ques 5</div>
 
-      <section class="middle tab-bar-section">
-        <h1 class="title">Moments</h1>
-      </section>
+    </div>
+    <div id="right">
+      <div class="rightq" id="ans1">answer 1</div>
+      <div class="rightq" id="ans2">answer 2</div>
 
-      <section class="right-small">
-        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-      </section>
-    </nav>
+      <div class="rightq" id="ans3">answer 3</div>
+      <div class="rightq" id="ans4">answer 4</div>
 
-    <aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Foundation</label></li>
-        <li><a href="#">The Psychohistorians</a></li>
-        <li><a href="#">The tester</a></li>
-        <li><a href="#">The Ruler</a></li>
-        <li><a href="#">The Maker</a></li>
-      </ul>
-    </aside>
+      <div class="rightq" id="ans5">answer 5</div>
 
-    <aside class="right-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Users</label></li>
-        <li><a href="#">Hari Seldon</a></li>
-        <li><a href="#">ashwin devarajan</a></li>
-      </ul>
-    </aside>
-
-    <section class="main-section">
-      <!-- content goes here -->
-      <h1>THE PSYCHOHISTORIANS</h1>
-      <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.
-
-Using psychohistory, Seldon has discovered the declining nature of the Empire, angering the aristocratic members of the Committee of Public Safety, the de facto rulers of the Empire. The Committee considers Seldon's views and statements treasonous, and he is arrested along with young mathematician Gaal Dornick, who has arrived on Trantor to meet Seldon. Seldon is tried by the Committee and defends his beliefs, explaining his theories and predictions, including his belief that the Empire will collapse in 500 years and enter a 30,000-year dark age, to the Committee's members.</p>
-    </section>
-
-  <a class="exit-off-canvas"></a>
-
-  </div>
-</div>
-
-  <!-- body content here -->
-  <p>Hello ashwin! </p>
-  <script src="foundation/js/vendor/jquery.js"></script>
-  <script src="foundation/js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-</body>
+    </div>
+  </body>
+  <style type="text/css">
+  #left{
+    width: 300px;
+    float: left;
+  }
+  #right{
+    width: 500px;
+    float: left;
+  }
+  </style>
 </html>

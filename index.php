@@ -353,24 +353,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Personality check</title>
+   
+    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+    <link rel="stylesheet" href="resource/index.css">
+    <script>
+    $(document).ready(function(){
+    // $('.rightq').hide();
+    $('#ans4').show();
+    $('.leftq').click(function(){
+      id = $(this).data('ans');
+      console.log("#"+id);
+      $('.rightq').hide();
+      $('#'+id).show();
+    });
+  });
+    </script>
+    
+  
 </head>
 <body>
-	<?php
-	echo "<Form name ='form1' Method ='Post' ACTION ='result.php'>";
-	for ($j = 0; $j<70; ++$j){
-		echo $q[$j]["question"];
-		echo intval($j)+ 1;
-		echo "<br />";
-		echo "<Input type = 'Radio' Name ='test".$j."' value= 'A'>".$q[$j]["A"];
-		echo "<Input type = 'Radio' Name ='test".$j."' value= 'B'>".$q[$j]["B"];		
-		echo "<P>";
-		echo "<br />";
-		
-	}
-	echo "<Input type = 'Submit' Name = 'Submit1' Value = 'Submit answers'>";
-	echo "</Form";
-	?>
 
+
+<?php
+    echo "<Form name='form1' Method='Post' ACTION='result.php'>";
+    echo "<div id='left'>";
+    for ($j=0; $j < 70 ; $j++) { 
+      echo "<div class='leftq' data-ans='ans".$j."'> Question ".$j."</div>";  
+    };
+    echo "</div>";
+    echo "<div id='right'>";
+   for ($j=0; $j < 70 ; $j++) { 
+      echo "<div class='rightq' id='ans".$j."'> Answer ".$j."</div>";  
+    };
+    echo "</div>";
+?>
+ 
+
+
+	<?php
+       
+	// echo "<Form name ='form1' Method ='Post' ACTION ='result.php'>";
+ //    echo "<div class='question'>";
+ //    echo "<div id='tabs'>";
+	// for ($j = 0; $j<70; ++$j){     
+ //        echo "<ul>";
+ //        echo "<li> <a href='#tabs-".$j."'> Question-".$j."</a></li>";
+ //        echo "</ul>"; 
+	// };
+ //    echo "<Input type = 'Submit' Name = 'Submit1' Value = 'Submit answers'>";
+ //    echo "</Form";
+ //    echo "</div>";
+ //    echo "</div>";
+   
+ //    echo "<div class='content'>";
+ //    for ($j=0; $j < 70; ++$j) { 
+ //        echo "<div id='tabs-".$j."''>";
+ //        echo $q[$j]["question"];
+        
+ //        echo "<br />";
+ //        echo "<Input type = 'Radio' Name ='test".$j."' value= 'A'>".$q[$j]["A"];
+ //        echo "<Input type = 'Radio' Name ='test".$j."' value= 'B'>".$q[$j]["B"];        
+ //        echo "<br />";
+ //        echo "<br />";
+ //        echo "</div>";
+ //    };
+ //    echo "</div>";
+	
+?>
+
+   
+    
 </body>
 </html>

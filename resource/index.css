@@ -1,0 +1,59 @@
+body{
+	background-color: white;
+	margin: 0px;
+	padding: 10px;
+}
+/*.question{
+	clear: none;
+	float: left;
+	display: inline;
+	width: 200px;
+	background-color: red;
+	height: 50%;
+}
+.answer{
+	background-color: #7EA051;
+	position: relative;
+	width: 35%;
+	height: 5%;
+	padding: 0px;
+	margin: 0px;
+}*/
+/*#tabs{
+	width: 200px;
+	position: relative;
+	padding: 10px;
+	clear:none;
+	display: inline;
+
+}*/
+/*.content{
+	left: 90%;
+	float: left;
+	clear: none;
+	padding: 20px;
+	
+	display: inline;
+	width: 500px;
+	height: 100%;
+	position: relative;
+	background-color: grey;
+}*/
+ 
+ #left{
+    width: 300px;
+    float: left;
+    width: 10%;
+    height: 10%;
+    background-color: grey;
+    padding: 2px;
+    position: relative;
+    border-radius: 15px;
+
+  }
+ #right: {
+    width: 500px;
+    float: left;
+
+  }
+  
