@@ -1,59 +1,22 @@
-body{
-	background-color: white;
-	margin: 0px;
-	padding: 10px;
+#ashwin {
+	background-color: #099ACB;
+	height: 20%;
 }
-/*.question{
-	clear: none;
-	float: left;
-	display: inline;
-	width: 200px;
-	background-color: red;
-	height: 50%;
+#head {
+	color: #E7F6FA;
 }
-.answer{
-	background-color: #7EA051;
-	position: relative;
-	width: 35%;
-	height: 5%;
-	padding: 0px;
-	margin: 0px;
-}*/
-/*#tabs{
-	width: 200px;
-	position: relative;
+#topdiv{
+	height: 20%;
+	background-color: #099ACB;
+	text-align: center;
 	padding: 10px;
-	clear:none;
-	display: inline;
-
-}*/
-/*.content{
-	left: 90%;
-	float: left;
-	clear: none;
-	padding: 20px;
-	
-	display: inline;
-	width: 500px;
-	height: 100%;
-	position: relative;
-	background-color: grey;
-}*/
- 
- #left{
-    width: 300px;
-    float: left;
-    width: 10%;
-    height: 10%;
-    background-color: grey;
-    padding: 2px;
-    position: relative;
-    border-radius: 15px;
-
-  }
- #right: {
-    width: 500px;
-    float: left;
-
-  }
-  
+	border-radius: 25px;
+}
+#belowdiv{
+	top: 20px;
+	height: 20%;
+	background-color: #A4A4A4;
+	text-align: center;
+	padding: 10px;
+	border-radius: 25px;
+}

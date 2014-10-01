@@ -1,48 +1,38 @@
-
+<!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
-  </head>
-   <script type="text/javascript">
-   $(document).ready(function(){
-    $('.rightq').hide();
-    $('.leftq').click(function(){
-      id = $(this).data('ans');
-      $('.rightq').hide();
-      $('#'+id).show();
-    });
-  });
-   </script>
-  <body>
-    <div id="left">
-      <div class="leftq" data-ans="ans1">ques 1</div>
-      <div class="leftq" data-ans="ans2">ques 2</div>
+<head><title>testing</title>
+<link rel="stylesheet" href="resource/index.css">
+<script type="text/javascript" src="jquery-2.1.0.min.js"></script>
 
-      <div class="leftq" data-ans="ans3">ques 3</div>
-      <div class="leftq" data-ans="ans4">ques 4</div>
+<link rel="stylesheet" href="resource/bootstrap.min.css">
 
-      <div class="leftq" data-ans="ans5">ques 5</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
 
-    </div>
-    <div id="right">
-      <div class="rightq" id="ans1">answer 1</div>
-      <div class="rightq" id="ans2">answer 2</div>
 
-      <div class="rightq" id="ans3">answer 3</div>
-      <div class="rightq" id="ans4">answer 4</div>
+<link rel="stylesheet" href="resource/bootstrap-theme.min.css">
 
-      <div class="rightq" id="ans5">answer 5</div>
 
-    </div>
-  </body>
-  <style type="text/css">
-  #left{
-    width: 300px;
-    float: left;
-  }
-  #right{
-    width: 500px;
-    float: left;
-  }
-  </style>
+<script src="resource/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+  
+</script>
+</head>
+<body>
+<div class="row">
+  <div class="col-md-6 col-xs-6 col-md-offset-3 col-xs-offset-3" id="topdiv"><h1>Moments</h1></div>
+  <div class="col-md-6 col-xs-6 col-md-offset-3 col-xs-offset-3" id="belowdiv">
+  <ul>
+    <p>Ever wondered who you are, in real?</p>
+    <p>What kind of person you are?</p>
+    <p>what defines you?</p>
+
+  </ul>
+  <button type="button" class="btn btn-default navbar-btn" onclick="window.location='index.php'">Enter</button>
+  </div>
+
+</div>
+
+
+</body>
 </html>
