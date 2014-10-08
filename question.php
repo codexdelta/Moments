@@ -10,12 +10,12 @@
                             "B" => "  Speculative than realistic"
                             ), 
                 
-        3 => array( "question" => "Is it worse to:", 
+    3 => array( "question" => "Is it worse to:", 
                                 "A" => "  Have your 'head in the clouds'", 
                                 "B" => "  Be 'in a rut'"
                                 ),
                 
-        4 => array( "question" => "Are you more impressed by:", 
+    4 => array( "question" => "Are you more impressed by:", 
                                 "A" => "  Principles", 
                                 "B" => "  Emotions"
                                 ),
@@ -359,13 +359,13 @@
     <link rel="stylesheet" href="resource/index.css">
     <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resource/bootstrap.min.css">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="resource/bootstrap-theme.min.css">
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="resource/bootstrap.min.js"></script>
     
   
 </head>
@@ -374,7 +374,7 @@
 <?php
     echo "<Form name='form1' Method='Post' ACTION='result.php'>";
     echo "<div class='panel-group' id='accordion'>";
-    for ($i=1; $i < 71; $i++) { 
+    for ($i=1; $i < 11; $i++) { 
         echo "<div class='panel panel-default' id='".$i."'>";
         echo "<div class='panel-heading'>";
         echo    "<h4 class='panel-title'>";
@@ -402,7 +402,13 @@
       
     }
     echo "</div>";
-    echo "<Input type = 'Submit' Name = 'Submit1' Value = 'Submit answers'>";
+
+    echo "<input type='button' class='btn btn-success pull-left' value='Previous'>";
+    
+    echo "<Input type = 'Submit' Name = 'Submit1' Value = 'Submit answers' class= 'btn btn-danger offset-1' align='center' style='margin:auto;padding:auto;' >";
+    
+    
+    echo "<input type='button' class='btn btn-success pull-right' value='Next'>";
     echo "</Form>";
    
   
@@ -457,39 +463,15 @@
 ?>
  
 
-
-	<?php
-       
-	// echo "<Form name ='form1' Method ='Post' ACTION ='result.php'>";
- //    echo "<div class='question'>";
- //    echo "<div id='tabs'>";
-	// for ($j = 0; $j<70; ++$j){     
- //        echo "<ul>";
- //        echo "<li> <a href='#tabs-".$j."'> Question-".$j."</a></li>";
- //        echo "</ul>"; 
-	// };
- //    echo "<Input type = 'Submit' Name = 'Submit1' Value = 'Submit answers'>";
- //    echo "</Form";
- //    echo "</div>";
- //    echo "</div>";
-   
- //    echo "<div class='content'>";
- //    for ($j=0; $j < 70; ++$j) { 
- //        echo "<div id='tabs-".$j."''>";
- //        echo $q[$j]["question"];
-        
- //        echo "<br />";
- //        echo "<Input type = 'Radio' Name ='test".$j."' value= 'A'>".$q[$j]["A"];
- //        echo "<Input type = 'Radio' Name ='test".$j."' value= 'B'>".$q[$j]["B"];        
- //        echo "<br />";
- //        echo "<br />";
- //        echo "</div>";
- //    };
- //    echo "</div>";
-	
-?>
-
    
     
 </body>
+<script type="text/javascript">
+    $(document).ready( function () {
+  
+  alert("If you don't know the answer you can skip them. \nbut beware the more you answer the more accurate the result will be. \nhave fun!")
+  
+}); 
+
+</script>
 </html>
