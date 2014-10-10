@@ -1,6 +1,6 @@
 <?php
 	$q=array(
-      1 => array( "question" => "At a party do you:",
+    1 => array( "question" => "At a party do you:",
                             "A" => "  Interact with many,including strangers",
                             "B" => "  Interact with a few,know to you"
                             ),
@@ -105,7 +105,7 @@
                             "B" => "  Easy-going"
                             ), 
 
-        22 => array( "question" => "In phoning do you:", 
+    22 => array( "question" => "In phoning do you:", 
                                 "A" => "  Rarely question that it will all we said", 
                                 "B" => "  Rehearse what you'll say"
                                 ), 
@@ -357,6 +357,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Personality check</title>
     <link rel="stylesheet" href="resource/index.css">
+    <style>
+    
+    #submit1{
+    display: block !important;
+    margin: auto !important;
+    width: 40% !important;
+
+}
+    </style>
     <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="resource/bootstrap.min.css">
@@ -366,14 +375,27 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="resource/bootstrap.min.js"></script>
-    
+    <script type="text/javascript">
+    $(document).ready( function () {
+        
+    $('#accordion2').hide();
+    $('#accordion3').hide();
+    $('#accordion4').hide();
+    $('#accordion5').hide();
+    $('#accordion6').hide();
+    $('#accordion7').hide();
+
+  alert("If you don't know the answer you can skip them. \nbut beware the more you answer the more accurate the result will be. \nhave fun!")
+  
+});
+</script>
   
 </head>
 <body>
 
 <?php
     echo "<Form name='form1' Method='Post' ACTION='result.php'>";
-    echo "<div class='panel-group' id='accordion'>";
+    echo "<div class='panel-group' id='accordion1'>";
     for ($i=1; $i < 11; $i++) { 
         echo "<div class='panel panel-default' id='".$i."'>";
         echo "<div class='panel-heading'>";
@@ -398,80 +420,326 @@
         echo "</div>";
         echo "\t\t</div>";  
         echo "\t</div>";
-        echo "</div>";
-      
+        echo "</div>";      
     }
+    echo "<a>Remaining Questions <span class='badge'>60</span></a>";
     echo "</div>";
 
-    echo "<input type='button' class='btn btn-success pull-left' value='Previous'>";
-    
-    echo "<Input type = 'Submit' Name = 'Submit1' Value = 'Submit answers' class= 'btn btn-danger offset-1' align='center' style='margin:auto;padding:auto;' >";
-    
-    
-    echo "<input type='button' class='btn btn-success pull-right' value='Next'>";
-    echo "</Form>";
-   
-  
-    
+    echo "<div class='panel-group' id='accordion2'>";
+    for ($i=11; $i < 21; $i++) { 
+        echo "<div class='panel panel-default' id='".$i."'>";
+        echo "<div class='panel-heading'>";
+        echo    "<h4 class='panel-title'>";
+        echo    "<a data-toggle='collapse' data-parent='#accordion' href='#collapse".$i."'>";
+        echo "";
+        echo    $q[$i]["question"];
+        echo    "</a>";
+        echo  "</h4>";
+        echo "</div>";
+        echo "<div id='collapse".$i."' class='panel-collapse collapse '>";
+        echo "<div class='panel-body'>";
+        echo "<div class='col-lg-6'>";
+        echo "<div class='input-group'>";
+        // echo "<span class='input-group-addon'>";    
+        echo "<input type='radio' name='test".$i."' value='A' readonly='readonly'>".$q[$i]["A"]."</input>";
+        echo "</br>";
+        // echo "</br>";
+        echo "<input type='radio' name='test".$i."' value='B' readonly='readonly'>".$q[$i]["B"]."</input>";
+        // echo "</span>";
+        echo "</div>";
+        echo "</div>";
+        echo "\t\t</div>";  
+        echo "\t</div>";
+        echo "</div>";
+    }
+    echo "<a>Remaining Questions <span class='badge'>50</span></a>";
+    echo "</div>";
 
+    echo "<div class='panel-group' id='accordion3'>";
+    for ($i=21; $i < 31; $i++) { 
+        echo "<div class='panel panel-default' id='".$i."'>";
+        echo "<div class='panel-heading'>";
+        echo    "<h4 class='panel-title'>";
+        echo    "<a data-toggle='collapse' data-parent='#accordion' href='#collapse".$i."'>";
+        echo "";
+        echo    $q[$i]["question"];
+        echo    "</a>";
+        echo  "</h4>";
+        echo "</div>";
+        echo "<div id='collapse".$i."' class='panel-collapse collapse '>";
+        echo "<div class='panel-body'>";
+        echo "<div class='col-lg-6'>";
+        echo "<div class='input-group'>";
+        // echo "<span class='input-group-addon'>";    
+        echo "<input type='radio' name='test".$i."' value='A' readonly='readonly'>".$q[$i]["A"]."</input>";
+        echo "</br>";
+        // echo "</br>";
+        echo "<input type='radio' name='test".$i."' value='B' readonly='readonly'>".$q[$i]["B"]."</input>";
+        // echo "</span>";
+        echo "</div>";
+        echo "</div>";
+        echo "\t\t</div>";  
+        echo "\t</div>";
+        echo "</div>";      
+    }
+    echo "<a>Remaining Questions <span class='badge'>40</span></a>";
+    echo "</div>";
 
+    echo "<div class='panel-group' id='accordion4'>";
+    for ($i=31; $i < 41; $i++) { 
+        echo "<div class='panel panel-default' id='".$i."'>";
+        echo "<div class='panel-heading'>";
+        echo    "<h4 class='panel-title'>";
+        echo    "<a data-toggle='collapse' data-parent='#accordion' href='#collapse".$i."'>";
+        echo "";
+        echo    $q[$i]["question"];
+        echo    "</a>";
+        echo  "</h4>";
+        echo "</div>";
+        echo "<div id='collapse".$i."' class='panel-collapse collapse '>";
+        echo "<div class='panel-body'>";
+        echo "<div class='col-lg-6'>";
+        echo "<div class='input-group'>";
+        // echo "<span class='input-group-addon'>";    
+        echo "<input type='radio' name='test".$i."' value='A' readonly='readonly'>".$q[$i]["A"]."</input>";
+        echo "</br>";
+        // echo "</br>";
+        echo "<input type='radio' name='test".$i."' value='B' readonly='readonly'>".$q[$i]["B"]."</input>";
+        // echo "</span>";
+        echo "</div>";
+        echo "</div>";
+        echo "\t\t</div>";  
+        echo "\t</div>";
+        echo "</div>";      
+    }
+    echo "<a>Remaining Questions <span class='badge'>30</span></a>";
+    echo "</div>";
 
+    echo "<div class='panel-group' id='accordion5'>";
+    for ($i=41; $i < 51; $i++) { 
+        echo "<div class='panel panel-default' id='".$i."'>";
+        echo "<div class='panel-heading'>";
+        echo    "<h4 class='panel-title'>";
+        echo    "<a data-toggle='collapse' data-parent='#accordion' href='#collapse".$i."'>";
+        echo "";
+        echo    $q[$i]["question"];
+        echo    "</a>";
+        echo  "</h4>";
+        echo "</div>";
+        echo "<div id='collapse".$i."' class='panel-collapse collapse '>";
+        echo "<div class='panel-body'>";
+        echo "<div class='col-lg-6'>";
+        echo "<div class='input-group'>";
+        // echo "<span class='input-group-addon'>";    
+        echo "<input type='radio' name='test".$i."' value='A' readonly='readonly'>".$q[$i]["A"]."</input>";
+        echo "</br>";
+        // echo "</br>";
+        echo "<input type='radio' name='test".$i."' value='B' readonly='readonly'>".$q[$i]["B"]."</input>";
+        // echo "</span>";
+        echo "</div>";
+        echo "</div>";
+        echo "\t\t</div>";  
+        echo "\t</div>";
+        echo "</div>";
+        }
+    echo "<a>Remaining Questions <span class='badge'>20</span></a>";
+    echo "</div>";
 
-
-
-    // echo "<Form name='form1' Method='Post' ACTION='result.php'>";
-    // echo "<div class='newclass'>";
-    // echo "<ul>";
-    // for ($i=0; $i < 70 ; $i++) { 
-    //     echo "<li id='".$i."'>";
-    //     echo $q[$i]["question"];
-    //     echo "<ul id='ul".$i."'>";
-    //     echo "<li id='a".$i."'>";
-    //     echo $q[$i]["A"];
-    //     echo "</li>";
-    //     echo "<li id='b".$i."'>";
-    //     echo $q[$i]["B"];
-    //     echo "</li>";
-    //     echo "</ul>";
-    //     echo "</li>";
-    // }
-    // echo "</ul>";
-    // echo "<>";
-
-
-   //  echo "<Form name='form1' Method='PDF_open_ccitt(pdfdoc, filenam,e width, height, BitReverse, k, Blackls1)st' ACTION='result.php'>";
-   //  echo "<div id='left'>";
-   //  for ($j=0; $j < 70 ; $j++) { 
-   //    echo "<div class='leftq' type='button' data-ans='ans".$j."'> Question ".$j."</div>";  
-   //  };
-   //  echo "</div>";
-   //  echo "<div id='right'>";
-   // for ($j=0; $j < 70 ; $j++) { 
-
-   //    echo "<div class='rightq' id='ans".$j."'> Question ".$j."";
-   //    echo "&nbsp;";
-   //    echo $q[$j]["question"];
-   //    echo "<br />";
-   //    echo "<br />";
-   //    echo "<Input type = 'Radio' Name ='test".$j."' value= 'A'>".$q[$j]["A"];
-   //    echo "<p>";
+    echo "<div class='panel-group' id='accordion6'>";
+    for ($i=51; $i < 61; $i++) { 
+        echo "<div class='panel panel-default' id='".$i."'>";
+        echo "<div class='panel-heading'>";
+        echo    "<h4 class='panel-title'>";
+        echo    "<a data-toggle='collapse' data-parent='#accordion' href='#collapse".$i."'>";
+        echo "";
+        echo    $q[$i]["question"];
+        echo    "</a>";
+        echo  "</h4>";
+        echo "</div>";
+        echo "<div id='collapse".$i."' class='panel-collapse collapse '>";
+        echo "<div class='panel-body'>";
+        echo "<div class='col-lg-6'>";
+        echo "<div class='input-group'>";
+        // echo "<span class='input-group-addon'>";    
+        echo "<input type='radio' name='test".$i."' value='A' readonly='readonly'>".$q[$i]["A"]."</input>";
+        echo "</br>";
+        // echo "</br>";
+        echo "<input type='radio' name='test".$i."' value='B' readonly='readonly'>".$q[$i]["B"]."</input>";
+        // echo "</span>";
+        echo "</div>";
+        echo "</div>";
+        echo "\t\t</div>";  
+        echo "\t</div>";
+        echo "</div>";
+        
       
-   //  echo "<Input type = 'Radio' Name ='test".$j."' value= 'B'>".$q[$j]["B"]; 
-   //    echo "</div>";  
-   //  };
-   //  echo "</div>";
+    }
+    echo "<a>Remaining Questions <span class='badge'>10</span></a>";
+    echo "</div>";
+
+    echo "<div class='panel-group' id='accordion7'>";
+    for ($i=61; $i < 71; $i++) { 
+        echo "<div class='panel panel-default' id='".$i."'>";
+        echo "<div class='panel-heading'>";
+        echo    "<h4 class='panel-title'>";
+        echo    "<a data-toggle='collapse' data-parent='#accordion' href='#collapse".$i."'>";
+        echo "";
+        echo    $q[$i]["question"];
+        echo    "</a>";
+        echo  "</h4>";
+        echo "</div>";
+        echo "<div id='collapse".$i."' class='panel-collapse collapse '>";
+        echo "<div class='panel-body'>";
+        echo "<div class='col-lg-6'>";
+        echo "<div class='input-group'>";
+        // echo "<span class='input-group-addon'>";    
+        echo "<input type='radio' name='test".$i."' value='A' readonly='readonly'>".$q[$i]["A"]."</input>";
+        echo "</br>";
+        // echo "</br>";
+        echo "<input type='radio' name='test".$i."' value='B' readonly='readonly'>".$q[$i]["B"]."</input>";
+        // echo "</span>";
+        echo "</div>";
+        echo "</div>";
+        echo "\t\t</div>";  
+        echo "\t</div>";
+        echo "</div>";
+       }
+    echo "<a>Remaining Questions <span class='badge'>0</span></a>";
+    echo "</div>";
+    echo "<div class='btn-group col-md-4 col-md-offset-5'>";
+    echo "<button type='button' class='btn btn-success pull-left' id='prev'>Previous</button>";
+    echo "<button type='Submit' class='btn btn-danger' id=''>Submit Answers</button>";
+    echo "<button type='button' class='btn btn-success' id='next'>Next</button>";
+    echo "</div>";
+    echo "</Form>";
 ?>
  
-
-   
-    
 </body>
+ 
 <script type="text/javascript">
-    $(document).ready( function () {
+    var count = 0;
+    
+  $("#next").click(function(){
+    count++
+    if(count==1){
+        $("#accordion1").hide();
+        $("#accordion2").slideDown();
+        $("#accordion3").hide();
+        $("#accordion4").hide();
+        $("#accordion5").hide();
+        $("#accordion6").hide();
+        $("#accordion7").hide();
+    }
+    else if (count==2) {
+                $("#accordion1").hide();
+                $("#accordion2").hide();
+                $("#accordion3").slideDown();
+                $("#accordion4").hide();
+                $("#accordion5").hide();
+                $("#accordion6").hide();
+                $("#accordion7").hide();
+    }
+    else if (count==3){
+                $("#accordion1").hide();
+                $("#accordion2").hide();
+                $("#accordion3").hide();
+                $("#accordion4").slideDown();
+                $("#accordion5").hide();
+                $("#accordion6").hide();
+                $("#accordion7").hide();
+    }
+    else if (count==4) {
+                $("#accordion1").hide();
+                $("#accordion2").hide();
+                $("#accordion3").hide();
+                $("#accordion4").hide();
+                $("#accordion5").slideDown();
+                $("#accordion6").hide();
+                $("#accordion7").hide();
+    }
+    else if (count==5){
+                $("#accordion1").hide();
+                $("#accordion2").hide();
+                $("#accordion3").hide();
+                $("#accordion4").hide();
+                $("#accordion5").hide();
+                $("#accordion6").slideDown();
+                $("#accordion7").hide();
+    }
+    else {
+                $("#accordion1").hide();
+                $("#accordion2").hide();
+                $("#accordion3").hide();
+                $("#accordion4").hide();
+                $("#accordion5").hide();
+                $("#accordion6").hide();
+                $("#accordion7").slideDown();
+    }
+  });
+
+$("#prev").click(function(){
+    
+    if(count==1){
+        $("#accordion1").slideDown();
+        $("#accordion2").hide();
+        $("#accordion3").hide();
+        $("#accordion4").hide();
+        $("#accordion5").hide();
+        $("#accordion6").hide();
+        $("#accordion7").hide();
+    }
+    else if (count==2) {
+                $("#accordion1").hide();
+                $("#accordion2").slideDown();
+                $("#accordion3").hide();
+                $("#accordion4").hide();
+                $("#accordion5").hide();
+                $("#accordion6").hide();
+                $("#accordion7").hide();
+    }
+    else if (count==3){
+                $("#accordion1").hide();
+                $("#accordion2").hide();
+                $("#accordion3").slideDown();
+                $("#accordion4").hide();
+                $("#accordion5").hide();
+                $("#accordion6").hide();
+                $("#accordion7").hide();
+    }
+    else if (count==4) {
+                $("#accordion1").hide();
+                $("#accordion2").hide();
+                $("#accordion3").hide();
+                $("#accordion4").slideDown();
+                $("#accordion5").hide();
+                $("#accordion6").hide();
+                $("#accordion7").hide();
+    }
+    else if (count=5) {
+                $("#accordion1").hide();
+                $("#accordion2").hide();
+                $("#accordion3").hide();
+                $("#accordion4").hide();
+                $("#accordion5").slideDown();
+                $("#accordion6").hide();
+                $("#accordion7").hide();
+    }
+    else{
+            $("#accordion1").hide();
+            $("#accordion2").hide();
+            $("#accordion3").hide();
+            $("#accordion4").hide();
+            $("#accordion5").hide();
+            $("#accordion6").slideDown();
+            $("#accordion7").hide();    
+    }
+    
+  });
+</script>   
   
-  alert("If you don't know the answer you can skip them. \nbut beware the more you answer the more accurate the result will be. \nhave fun!")
-  
-}); 
+
+
+
 
 </script>
 </html>
