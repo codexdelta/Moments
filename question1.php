@@ -1,10 +1,8 @@
-<?php
+<!DOCTYPE html>
+<?php 
+    
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-	global $q;
-    global $rand_keys;
-    $q = array(
+    $q=array(
     1 => array( "question" => "At a party do you:",
                             "A" => "  Interact with many,including strangers",
                             "B" => "  Interact with a few,know to you"
@@ -18,12 +16,12 @@ ini_set('display_errors', 1);
     3 => array( "question" => "Is it worse to:", 
                                 "A" => "  Have your 'head in the clouds'", 
                                 "B" => "  Be 'in a rut'"
-                            ),
+                                ),
                 
     4 => array( "question" => "Are you more impressed by:", 
                                 "A" => "  Principles", 
                                 "B" => "  Emotions"
-                            ),
+                                ),
 
     5 => array( "question" => "Are more drawn toward the:", 
                             "A" => "  Convincing", 
@@ -113,7 +111,7 @@ ini_set('display_errors', 1);
     22 => array( "question" => "In phoning do you:", 
                                 "A" => "  Rarely question that it will all we said", 
                                 "B" => "  Rehearse what you'll say"
-                            ), 
+                                ), 
 
     23 => array( "question" => "Facts:", 
                             "A" => "  'speak for themselves'", 
@@ -161,8 +159,6 @@ ini_set('display_errors', 1);
 
     32 => array( "question" => "In making decisions do you feel more comfortable with:", 
                             "A" => "  Standards", 
-                            "B" => "  Feelings"
-                            ),
 
     34 => array( "question" => "Which is more admirable:", 
                             "A" => "  The ability to organize and to be methodical", 
@@ -309,105 +305,18 @@ ini_set('display_errors', 1);
                             "B" => "  Spontaneous than deliberate"
                             ),
     );
-?>
 
-<!DOCTYPE html>
+
+ ?>
+
+
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Personality check</title>
-    <link rel="stylesheet" href="resource/index.css">
+<head><title>ashwin</title></head>
+<body><p>something</p>
 
-    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
-    
-    <link rel="stylesheet" href="resource/bootstrap.min.css">
+<?php 
+echo "hello!";
 
-    
-    <link rel="stylesheet" href="resource/bootstrap-theme.min.css">
-
-
-    <script src="resource/bootstrap.min.js"></script>
-    <script type="text/javascript">
-  // alert("If you don't know the answer you can skip them.
-  //        \nbut beware the more you answer the more accurate the result will be. \nhave fun!")
-
-$(document).ready(function(){
-    $("#jumbotron1").show();
-});
-
-</script>
-  
-</head>
-<body>
-
-<?php
-
-    shuffle($q);
-    echo "<Form name='form1' Method='Post' ACTION='result.php'>"; 
-    for ($i=1; $i < 61; $i++) { 
-        echo "<div class='jumbotron' id=jumbotron".$i.">";
-        echo    "<h1>".$q[$i]["question"]."</h1>";
-        echo "</br>";
-        echo "<p><a class='btn btn-primary btn-lg pull-left' role='radio'>".$q[$i]["A"]."</a>&nbsp&nbsp&nbsp";
-        echo "<a class='btn btn-primary btn-lg pull-right' role='radio'>".$q[$i]["B"]."</a></p>";
-        echo "</div>";  
-
-        // echo $q[$i]['A'];
-    }
-    echo "<div class='btn-group col-md-4 col-md-offset-3' id='btndiv'>";
-    // echo "<button type='button' class='btn btn-success pull-left' id='prev'>Previous</button>";
-    echo "<button type='Submit' class='btn btn-danger' id='sub'>Submit</button>";
-    echo "<button type='button' class='btn btn-success' id='next'>Next</button>";
-    echo "</div>";
-    echo "</Form>";
-
-
-//     // echo "<div class='panel panel-default' id='".$i."'>";
-//     // echo "<div class='panel-heading'>";
-//     // echo    "<h4 class='panel-title'>";
-//     //     echo    "<a data-toggle='collapse' data-parent='#jumbotron' href='#collapse".$i."'>";
-//     //     echo "";
-//     //     echo    $q[$rand_keys[1]]["question"];
-//     //     echo    "</a>";
-//     //     echo  "</h4>";
-//     //     echo "</div>";
-//     //     echo "<div id='collapse".$i."' class='panel-collapse collapse '>";
-//     //     echo "<div class='panel-body'>";
-//     //     echo "<div class='col-lg-6'>";
-//     //     echo "<div class='input-group'>";
-//     //     // echo "<span class='input-group-addon'>";    
-//     //     echo "<input type='radio' name='test".$i."' value='A' readonly='readonly'>".$q[$rand_keys[1]]["A"]."</input>";
-//     //     echo "</br>";
-//     //     // echo "</br>";
-//     //     echo "<input type='radio' name='test".$i."' value='B' readonly='readonly'>".$q[$rand_keys[1]    ]["B"]."</input>";
-//     //     // echo "</span>";
-//     //     echo "</div>";
-//     //     echo "</div>";
-//     //     echo "\t\t</div>";  
-//     //     echo "\t</div>";
-//     //     echo "</div>";
-
-    
-
-
-?>
- 
+ ?>
 </body>
-
-  <script type="text/javascript">
-  var count = 0;
-  var newslide = 1;
-  $("#next").click(function(){
-    count++
-   $(".jumbotron").hide();
-   $("#jumbotron" + newslide).slideDown();
-   newslide++
-   } );
-  </script>
-
-
-
-
-
 </html>

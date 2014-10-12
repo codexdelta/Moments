@@ -23,3 +23,17 @@
 	padding: 10px;
 	
 }
+#btndiv{
+	left: 7%;
+}
+#next{
+	height: 20%;
+	width: 30%;
+}
+#sub{
+	height: 20%;
+	width: 40%;
+}
+.jumbotron{
+	display: none;
+}
