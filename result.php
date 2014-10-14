@@ -64,72 +64,72 @@
 <body>
 <p>just to test the site</p>
 <?php
-	// echo $E;
-	// echo "<br />";
-	// echo $I;	
-	// echo "<br />";
-	// echo $N;
-	// echo "<br />";
-	// echo $S;
-	// echo "<br />";
-	// echo $F;
-	// echo "<br />";
-	// echo $T;
-	// echo "<br />";
-	// echo $J;
-	// echo "<br />";
-	// echo $P;
-	// echo "<br />";
+	echo $E;
+	echo "<br />";
+	echo $I;	
+	echo "<br />";
+	echo $N;
+	echo "<br />";
+	echo $S;
+	echo "<br />";
+	echo $F;
+	echo "<br />";
+	echo $T;
+	echo "<br />";
+	echo $J;
+	echo "<br />";
+	echo $P;
+	echo "<br />";
 
 	if ($E>=$I && $N>=$S && $F>=$T && $J>=$P) {
-		header('Location: http://30.0.0.79/Moments/new/enfj.html');
+		header('Location: new/enfj.html');
 	}
 	elseif ($E>=$I && $N>=$S && $T>$F && $J>=$P) {
-		header('Location: http://30.0.0.79/Moments/new/entj.html');
+		header('Location: new/entj.html');
 	}
 	elseif ($E>=$I && $N>=$S && $F>=$T && $P>$J) {
-		header('Location: http://30.0.0.79/Moments/new/enfp.html');
+		header('Location: new/enfp.html');
 	}
 	elseif ($E>=$I && $N>=$S && $T>$F && $P>$J) {
-		header('Location: http://30.0.0.79/Moments/new/entp.html');
+		header('Location: new/entp.html');
 	}
 	elseif ($E>=$I && $S>$N && $F>=$T && $J>=$P) {
-		header('Location: http://30.0.0.79/Moments/new/esfj.html');
+		header('Location: new/esfj.html');
 
 	}
 	elseif ($E>=$I && $S>$N && $F>=$T && $P>$J) {
-		header('Location: http://30.0.0.79/Moments/new/esfp.html');
+		header('Location: new/esfp.html');
 
 	}
 	elseif ($E>=$I && $S>$N && $T>$F && $J>=$P) {
-		header('Location: http://30.0.0.79/Moments/new/estj.html');
+		header('Location: new/estj.html');
 	}
 	elseif ($E>=$I && $S>$N && $T>$F && $P>$J) {
-		header('Location: http://30.0.0.79/Moments/new/estp.html');
+		header('Location: new/estp.html');
 	}
 	elseif ($I>$E && $N>=$S && $F>=$T && $J>=$P) {
-		header('Location: http://30.0.0.79/Moments/new/infj.html');
+		header('Location: new/infj.html');
 	}
 	elseif ($I>$E && $N>=$S && $F>=$T && $P>$J) {
-		header('Location: http://30.0.0.79/Moments/new/infp.html');
+		header('Location: new/infp.html');
 	}
 	elseif ($I>$E && $N>=$S && $T>$F && $J>=$P) {
-		header('Location: http://30.0.0.79/Moments/new/intj.html');
+		header('Location: new/intj.html');
 	}
 	elseif ($I>$E && $N>=$S && $T>$F && $P>$J) {
-		header('Location: http://30.0.0.79/Moments/new/intp.html');
+		header('Location: new/intp.html');
 	}
 	elseif ($I>$E && $N>=$S && $F>=$T && $J>=$P) {
-		header('Location: http://30.0.0.79/Moments/new/infj.html');
+		header('Location: new/infj.html');
 	}
 	elseif ($I>$E && $N>=$S && $F>=$T && $P>$J) {
-		header('Location: http://30.0.0.79/Moments/new/infp.html');
+		header('Location: new/infp.html');
 	}
 	elseif ($I>$E && $N>=$S && $T>$F && $J>=$P) {
-		header('Location: http://30.0.0.79/Moments/new/intj.html');
+		header('Location: new/intj.html');
 	}
 	elseif ($I>$E && $N>=$S && $T>$F && $P>$J) {
-		header('Location: http://30.0.0.79/Moments/new/intp.html');
+		header('Location: new/intp.html');
 	}
 	
 

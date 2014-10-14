@@ -334,6 +334,7 @@ ini_set('display_errors', 1);
 
 $(document).ready(function(){
     $("#jumbotron1").show();
+    $(".radio").hide();
 });
 
 </script>
@@ -346,49 +347,21 @@ $(document).ready(function(){
     shuffle($q);
     echo "<Form name='form1' Method='Post' ACTION='result.php'>"; 
     for ($i=1; $i < 61; $i++) { 
-        echo "<div class='' id=jumbotron".$i.">";
+        echo "<div class='jumbotron' id=jumbotron".$i.">";
         echo    "<h1>".$q[$i]["question"]."</h1>";
         echo "</br>";
-        echo "<p><a class='btn btn-primary btn-lg pull-left' role='radio'>".$q[$i]["A"]."</a>&nbsp&nbsp&nbsp";
-        echo "<a class='btn btn-primary btn-lg pull-right' role='radio'>".$q[$i]["B"]."</a></p>";
+        echo "<input type='radio' class='radio' name='test".$i."' value='A' id='testa".$i."'></input> <input type='button' class='btn btn-lg btn-primary pull-left ans' id='btnansa".$i."' value='".$q[$i]["A"]."' data-radio='testa".$i."'></input>";
+        echo "<input type='radio' class='radio' name='test".$i."' value='B' id='testb".$i."'></input> <input type='button' class='btn btn-lg btn-primary pull-right ans' id='btnansb".$i."' value='".$q[$i]["B"]."' data-radio='testb".$i."'></input>";
         echo "</div>";  
 
-        // echo $q[$i]['A'];
+        
     }
     echo "<div class='btn-group col-md-4 col-md-offset-3' id='btndiv'>";
     // echo "<button type='button' class='btn btn-success pull-left' id='prev'>Previous</button>";
-    echo "<button type='Submit' class='btn btn-danger' id='sub'>Submit</button>";
-    echo "<button type='button' class='btn btn-success' id='next'>Next</button>";
+    echo "<button type='Submit' class='btn btn-lg btn-danger' id='sub'>Submit</button>";
+    // echo "<button type='button' class='btn btn-success' id='next'>Next</button>";
     echo "</div>";
     echo "</Form>";
-
-
-    // echo "<div class='panel panel-default' id='".$i."'>";
-    // echo "<div class='panel-heading'>";
-    // echo    "<h4 class='panel-title'>";
-    //     echo    "<a data-toggle='collapse' data-parent='#jumbotron' href='#collapse".$i."'>";
-    //     echo "";
-    //     echo    $q[$rand_keys[1]]["question"];
-    //     echo    "</a>";
-    //     echo  "</h4>";
-    //     echo "</div>";
-    //     echo "<div id='collapse".$i."' class='panel-collapse collapse '>";
-    //     echo "<div class='panel-body'>";
-    //     echo "<div class='col-lg-6'>";
-    //     echo "<div class='input-group'>";
-    //     // echo "<span class='input-group-addon'>";    
-    //     echo "<input type='radio' name='test".$i."' value='A' readonly='readonly'>".$q[$rand_keys[1]]["A"]."</input>";
-    //     echo "</br>";
-    //     // echo "</br>";
-    //     echo "<input type='radio' name='test".$i."' value='B' readonly='readonly'>".$q[$rand_keys[1]    ]["B"]."</input>";
-    //     // echo "</span>";
-    //     echo "</div>";
-    //     echo "</div>";
-    //     echo "\t\t</div>";  
-    //     echo "\t</div>";
-    //     echo "</div>";
-
-    
 
 
 ?>
@@ -396,9 +369,14 @@ $(document).ready(function(){
 </body>
 
   <script type="text/javascript">
+  
+    $(".ans").click(function(){
+        var rcall= $(this).data("radio");
+        $("#"+rcall).prop("checked", true);
+    });     
   var count = 0;
   var newslide = 1;
-  $("#next").click(function(){
+  $(".ans").click(function(){
     count++
    $(".jumbotron").hide();
    $("#jumbotron" + newslide).slideDown();
