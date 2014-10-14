@@ -64,24 +64,12 @@
 <body>
 <p>just to test the site</p>
 <?php
-	echo $E;
-	echo "<br />";
-	echo $I;	
-	echo "<br />";
-	echo $N;
-	echo "<br />";
-	echo $S;
-	echo "<br />";
-	echo $F;
-	echo "<br />";
-	echo $T;
-	echo "<br />";
-	echo $J;
-	echo "<br />";
-	echo $P;
-	echo "<br />";
+	
 
-	if ($E>=$I && $N>=$S && $F>=$T && $J>=$P) {
+	if($E==0 && $I==0 && $N==0 && $S==0 && $F==0 && $T==0 && $J==0 && $P==0){
+		header('Location: new/notice.html');
+	}
+	elseif ($E>=$I && $N>=$S && $F>=$T && $J>=$P) {
 		header('Location: new/enfj.html');
 	}
 	elseif ($E>=$I && $N>=$S && $T>$F && $J>=$P) {

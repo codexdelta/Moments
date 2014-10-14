@@ -350,13 +350,15 @@ $(document).ready(function(){
         echo "<div class='jumbotron' id=jumbotron".$i.">";
         echo    "<h1>".$q[$i]["question"]."</h1>";
         echo "</br>";
-        echo "<input type='radio' class='radio' name='test".$i."' value='A' id='testa".$i."'></input> <input type='button' class='btn btn-lg btn-primary pull-left ans' id='btnansa".$i."' value='".$q[$i]["A"]."' data-radio='testa".$i."'></input>";
-        echo "<input type='radio' class='radio' name='test".$i."' value='B' id='testb".$i."'></input> <input type='button' class='btn btn-lg btn-primary pull-right ans' id='btnansb".$i."' value='".$q[$i]["B"]."' data-radio='testb".$i."'></input>";
+        echo "<input type='radio' class='radio' name='test".$i."' value='A' id='testa".$i."'></input> <input type='button' class='btn btn-lg btn-primary  ans' id='btnansa".$i."' value='".$q[$i]["A"]."' data-radio='testa".$i."'></input>";
+        echo "<br />";
+        echo "<br />";
+        echo "<input type='radio' class='radio' name='test".$i."' value='B' id='testb".$i."'></input> <input type='button' class='btn btn-lg btn-primary  ans' id='btnansb".$i."' value='".$q[$i]["B"]."' data-radio='testb".$i."'></input>";
         echo "</div>";  
 
         
     }
-    echo "<div class='btn-group col-md-4 col-md-offset-3' id='btndiv'>";
+    echo "<div class='btn-group' id='btndiv'>";
     // echo "<button type='button' class='btn btn-success pull-left' id='prev'>Previous</button>";
     echo "<button type='Submit' class='btn btn-lg btn-danger' id='sub'>Submit</button>";
     // echo "<button type='button' class='btn btn-success' id='next'>Next</button>";
@@ -370,17 +372,20 @@ $(document).ready(function(){
 
   <script type="text/javascript">
   
-    $(".ans").click(function(){
-        var rcall= $(this).data("radio");
-        $("#"+rcall).prop("checked", true);
-    });     
+    // $(".ans").click(function(){
+    //     var rcall= $(this).data("radio");
+    //     $("#"+rcall).prop("checked", true);
+    // });     
   var count = 0;
   var newslide = 1;
   $(".ans").click(function(){
     count++
+    newslide++
+    var rcall= $(this).data("radio");
+    $("#"+rcall).prop("checked", true);
    $(".jumbotron").hide();
    $("#jumbotron" + newslide).slideDown();
-   newslide++
+   
    } );
   </script>
 
