@@ -346,7 +346,7 @@ $(document).ready(function(){
     shuffle($q);
     echo "<Form name='form1' Method='Post' ACTION='result.php'>"; 
     for ($i=1; $i < 61; $i++) { 
-        echo "<div class='jumbotron' id=jumbotron".$i.">";
+        echo "<div class='' id=jumbotron".$i.">";
         echo    "<h1>".$q[$i]["question"]."</h1>";
         echo "</br>";
         echo "<p><a class='btn btn-primary btn-lg pull-left' role='radio'>".$q[$i]["A"]."</a>&nbsp&nbsp&nbsp";
