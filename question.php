@@ -363,30 +363,30 @@ $(document).ready(function(){
     echo "</Form>";
 
 
-//     // echo "<div class='panel panel-default' id='".$i."'>";
-//     // echo "<div class='panel-heading'>";
-//     // echo    "<h4 class='panel-title'>";
-//     //     echo    "<a data-toggle='collapse' data-parent='#jumbotron' href='#collapse".$i."'>";
-//     //     echo "";
-//     //     echo    $q[$rand_keys[1]]["question"];
-//     //     echo    "</a>";
-//     //     echo  "</h4>";
-//     //     echo "</div>";
-//     //     echo "<div id='collapse".$i."' class='panel-collapse collapse '>";
-//     //     echo "<div class='panel-body'>";
-//     //     echo "<div class='col-lg-6'>";
-//     //     echo "<div class='input-group'>";
-//     //     // echo "<span class='input-group-addon'>";    
-//     //     echo "<input type='radio' name='test".$i."' value='A' readonly='readonly'>".$q[$rand_keys[1]]["A"]."</input>";
-//     //     echo "</br>";
-//     //     // echo "</br>";
-//     //     echo "<input type='radio' name='test".$i."' value='B' readonly='readonly'>".$q[$rand_keys[1]    ]["B"]."</input>";
-//     //     // echo "</span>";
-//     //     echo "</div>";
-//     //     echo "</div>";
-//     //     echo "\t\t</div>";  
-//     //     echo "\t</div>";
-//     //     echo "</div>";
+    // echo "<div class='panel panel-default' id='".$i."'>";
+    // echo "<div class='panel-heading'>";
+    // echo    "<h4 class='panel-title'>";
+    //     echo    "<a data-toggle='collapse' data-parent='#jumbotron' href='#collapse".$i."'>";
+    //     echo "";
+    //     echo    $q[$rand_keys[1]]["question"];
+    //     echo    "</a>";
+    //     echo  "</h4>";
+    //     echo "</div>";
+    //     echo "<div id='collapse".$i."' class='panel-collapse collapse '>";
+    //     echo "<div class='panel-body'>";
+    //     echo "<div class='col-lg-6'>";
+    //     echo "<div class='input-group'>";
+    //     // echo "<span class='input-group-addon'>";    
+    //     echo "<input type='radio' name='test".$i."' value='A' readonly='readonly'>".$q[$rand_keys[1]]["A"]."</input>";
+    //     echo "</br>";
+    //     // echo "</br>";
+    //     echo "<input type='radio' name='test".$i."' value='B' readonly='readonly'>".$q[$rand_keys[1]    ]["B"]."</input>";
+    //     // echo "</span>";
+    //     echo "</div>";
+    //     echo "</div>";
+    //     echo "\t\t</div>";  
+    //     echo "\t</div>";
+    //     echo "</div>";
 
     
 
