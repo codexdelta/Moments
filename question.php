@@ -359,9 +359,7 @@ $(document).ready(function(){
         
     }
     echo "<div class='btn-group' id='btndiv'>";
-    // echo "<button type='button' class='btn btn-success pull-left' id='prev'>Previous</button>";
     echo "<button type='Submit' class='btn btn-lg btn-danger' id='sub'>Submit</button>";
-    // echo "<button type='button' class='btn btn-success' id='next'>Next</button>";
     echo "</div>";
     echo "</Form>";
 
@@ -370,12 +368,7 @@ $(document).ready(function(){
  
 </body>
 
-  <script type="text/javascript">
-  
-    // $(".ans").click(function(){
-    //     var rcall= $(this).data("radio");
-    //     $("#"+rcall).prop("checked", true);
-    // });     
+  <script type="text/javascript">   
   var count = 0;
   var newslide = 1;
   $(".ans").click(function(){

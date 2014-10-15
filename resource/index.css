@@ -32,7 +32,7 @@
 .jumbotron{
 	display: none;
 	background-color: #BBB !important;
-	box-shadow: 0px 5px 10px #888888;
+	box-shadow: 0px 10px 10px #888888;
 }
 .ans{
 	position: relative;
