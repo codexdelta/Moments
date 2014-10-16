@@ -16,8 +16,8 @@ ini_set('display_errors', 1);
                             ), 
                 
     3 => array( "question" => "Is it worse to:", 
-                                "A" => "  Have your 'head in the clouds'", 
-                                "B" => "  Be 'in a rut'"
+                                "A" => "  Have your head in the clouds", 
+                                "B" => "  Be in a rut"
                             ),
                 
     4 => array( "question" => "Are you more impressed by:", 
@@ -32,7 +32,7 @@ ini_set('display_errors', 1);
 
     6 => array( "question" => "Do you prefer to work:", 
                             "A" => "  To deadlines", 
-                            "B" => "  Just 'whenever'"
+                            "B" => "  Just whenever"
                             ), 
 
     7 => array( "question" => "Do you tend to choose:", 
@@ -86,7 +86,7 @@ ini_set('display_errors', 1);
                             ), 
 
     17 => array( "question" => "Writers should:", 
-                            "A" => "  'Say what they mean and what they say'", 
+                            "A" => "  Say what they mean and what they say", 
                             "B" => "  Express things more by use of analogy"
                             ), 
 
@@ -230,8 +230,8 @@ ini_set('display_errors', 1);
                             ),
 
     46 => array( "question" => "Which is more of a compliment:", 
-                            "A" => "  'There is a very logical person'", 
-                            "B" => "  'There is a very sentimental person'"
+                            "A" => "  There is a very logical person", 
+                            "B" => "  There is a very sentimental person"
                             ),
 
     47 => array( "question" => "Do you value in yourself more than you are:",         
@@ -354,7 +354,7 @@ ini_set('display_errors', 1);
                             "B" => "  Spontaneous than deliberate"
                             ),
     );
-?>s
+?>
 
 <!DOCTYPE html>
 <html>
