@@ -1,0 +1,18 @@
+{
+	"version":"1.0",
+	"name": "Moments",
+	"description": "An app for personality check, answer to some of the psychological questions which will reveal your personality type and also guide you with some of the problems that is commanly faced by your personality type.",
+	"launch_path":"/index.html",
+	"chrome":{"navigation": true},
+	"orientation":["portrait-primary"],
+	"icons": {
+		"128":"/img/128.png",
+		"1042": "/img/1042.png"
+	},
+	"developer": {
+		"name": "Ashwin Devarajan",
+		"url":"http://ashwin.pixelcount.net"
+
+	},
+	"default_locale": "en"
+}
