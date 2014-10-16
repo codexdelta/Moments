@@ -116,7 +116,7 @@ ini_set('display_errors', 1);
                             ), 
 
     23 => array( "question" => "Facts:", 
-                            "A" => "  'speak for themselves'", 
+                            "A" => "  Speak for themselves", 
                             "B" => "  Illustrate principles"
                             ), 
 
@@ -164,6 +164,11 @@ ini_set('display_errors', 1);
                             "B" => "  Feelings"
                             ),
 
+    33 => array( "question" => "Are you more :",
+                            "A" => "  Firm than gentle",
+                            "B" => "  Gentle than firm"
+                            ),
+
     34 => array( "question" => "Which is more admirable:", 
                             "A" => "  The ability to organize and to be methodical", 
                             "B" => "  The ability to adapt and make do"
@@ -179,11 +184,51 @@ ini_set('display_errors', 1);
                             "B" => "  Tax your reserves"
                             ), 
 
+    37 => array( "question" => "Are you more frequently :",
+                            "A" => "  A practical sort of person",
+                            "B" => "  A fanciful sort of person"
+                            ),
 
     38 => array( "question" => "Are you more likely to:", 
                             "A" => "  See how others are useful", 
                             "B" => "  See how others see"
-                            ), 
+                            ),
+
+    39 => array( "question" => "Which is more satisfying :", 
+                            "A" => "  To discuss an issue thoroughly", 
+                            "B" => "  To arrive at agreement on an issue"
+                            ),
+
+    40 => array( "question" => "Which rules you more :", 
+                            "A" => "  Your head", 
+                            "B" => "  Your heart"
+                            ),
+
+    41 => array( "question" => "Are you more comfortable with work that is :", 
+                            "A" => "  Contracted", 
+                            "B" => "  done on a casual basis"
+                            ),
+
+    42 => array( "question" => "Do you tend to look for :" , 
+                            "A" => "  The orderly", 
+                            "B" => "  Whatever turns up"
+                            ),
+
+    43 => array( "question" => "Do you prefer : ", 
+                            "A" => "  Many friends with brief contact", 
+                            "B" => "  A few friends with more lengthly contact"
+                            ),
+
+    44 => array( "question" => "Do you go more by :", 
+                            "A" => "  Facts", 
+                            "B" => "  Principles"
+                            ),
+
+    45 => array( "question" => "Are you more interested in :", 
+                            "A" => "  Production and Distribution", 
+                            "B" => "  Design and Research"
+                            ),
+
     46 => array( "question" => "Which is more of a compliment:", 
                             "A" => "  'There is a very logical person'", 
                             "B" => "  'There is a very sentimental person'"
@@ -309,7 +354,7 @@ ini_set('display_errors', 1);
                             "B" => "  Spontaneous than deliberate"
                             ),
     );
-?>
+?>s
 
 <!DOCTYPE html>
 <html>
