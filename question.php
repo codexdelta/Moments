@@ -404,6 +404,7 @@ $(document).ready(function(){
         
     }
     echo "<div class='btn-group' id='btndiv'>";
+
     echo "<button type='Submit' class='btn btn-lg btn-danger' id='sub'>Submit</button>";
     echo "</div>";
     echo "</Form>";
@@ -412,16 +413,8 @@ $(document).ready(function(){
 ?>
  
 </body>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Moments_1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5299715634931562"
-     data-ad-slot="2252330122"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
+
   <script type="text/javascript">   
   var count = 0;
   var newslide = 1;
