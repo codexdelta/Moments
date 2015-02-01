@@ -1,0 +1,264 @@
+
+/**
+ *   http://meyerweb.com/eric/tools/css/reset/ 
+ *   v2.0 | 20110126
+ *   License: none (public domain)
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ *   Font-face
+ */
+
+@font-face {
+    font-family: 'trade_bold_condensed';
+    src: url('../fonts/tradegothicltstd-bdcn20-webfont.eot');
+    src: url('../fonts/tradegothicltstd-bdcn20-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tradegothicltstd-bdcn20-webfont.woff') format('woff'),
+         url('../fonts/tradegothicltstd-bdcn20-webfont.ttf') format('truetype'),
+         url('../fonts/tradegothicltstd-bdcn20-webfont.svg#trade_gothic_lt_std_cnbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'trade_bold';
+    src: url('../fonts/tradegothicltstd-bold-webfont.eot');
+    src: url('../fonts/tradegothicltstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tradegothicltstd-bold-webfont.woff') format('woff'),
+         url('../fonts/tradegothicltstd-bold-webfont.ttf') format('truetype'),
+         url('../fonts/tradegothicltstd-bold-webfont.svg#trade_gothic_lt_std_boldRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'trade_regular';
+    src: url('../fonts/tradegothicltstd-webfont.eot');
+    src: url('../fonts/tradegothicltstd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tradegothicltstd-webfont.woff') format('woff'),
+         url('../fonts/tradegothicltstd-webfont.ttf') format('truetype'),
+         url('../fonts/tradegothicltstd-webfont.svg#trade_gothic_lt_stdregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+ *   Styles
+ */
+
+img {
+  max-width:100%;
+}
+
+body {
+  font-family:trade_bold_condensed,helvetica;
+}
+
+#main {
+  max-width:1024px;
+  height:100%;
+  margin:auto;
+ 
+}
+
+header {
+  padding:2%;
+  background:#3F3F3F;
+}
+
+header a {
+  width:7%;
+  display:block;
+}
+
+section {
+  
+}
+
+#top {
+  background:url(img/bg_top.png);
+  padding:4% 5% 20% 5%;
+  border-bottom:1px solid #C2C0C1;
+}
+
+h1 {
+  font-size:3.6875em; /*59px*/
+}
+
+#ratings {
+  margin:20px 0 0 0;
+  width:40%;
+}
+
+.star-wrapper {
+  width:8.5%;
+  float:left;
+}
+
+.stars {
+}
+
+.rating {
+  font-size:1.7em;
+  color:#3B3B39;
+  margin-left:4px;
+  padding-top:2px;
+  float:left;
+}
+
+
+
+#bottom {
+  background:#F6F5F1;
+  padding:0 0 10% 0;
+  position:relative;
+}
+
+#book {
+  max-width:75%;
+  padding:5%;
+  margin:5% 0 10% 7%;
+  border:1px solid #000;
+  position:relative;
+  background:#fff;
+  float:left;
+  overflow:visible;
+  z-index:2;
+  width:100%;
+}
+
+#info {
+  padding:0 0 0 5%;
+  font-size:1.875em; /*30px*/
+  color:#3f3f3f;
+  clear:both;
+}
+
+#author {
+  margin:0 0 3% 0;
+  font-family:trade_regular;
+}
+
+#author span {
+  font-family:trade_bold;
+}
+
+.price span {
+  color:#7a6701;
+}
+
+.line-through {
+  text-decoration:line-through;
+  color:#3F3F3F !important;
+}
+
+footer {
+  background:#2CA641;
+  color:#fff;
+  padding:3% 0;
+  text-align:center;
+  font-size:1.25em; /*20px*/
+}
+
+@media screen and (max-width:1024px){
+  
+  body {
+    font-size:90%;
+  }
+  
+} 
+
+@media screen and (max-width:768px){
+  
+  body {
+    font-size:65%;
+  }
+  
+  footer {
+    font-size:1.5em;
+  }
+  
+  .rating {
+    padding-top:0;
+  }
+  
+}  
+
+@media screen and (max-width:480px){
+  
+  body {
+    font-size:50%;
+  }
+  
+  footer {
+    font-size:1.5em;
+  }
+  
+  
+  .rating {
+    padding-top:0;
+  }
+  
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
